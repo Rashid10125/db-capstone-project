@@ -102,7 +102,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `LittleLemonDB`.`Orders` (
   `OrderID` INT NOT NULL,
   `OrderDate` DATE NULL,
-  `TotalCost` DECIMAL(18,4) NULL,
+  `TotalCost` DECIMAL(18,2) NULL,
   `Orderscol` VARCHAR(45) NULL,
   `BookingID` INT NOT NULL,
   `OrderDeliveryID` INT NOT NULL,
@@ -157,7 +157,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `LittleLemonDB`.`OrderDetails` (
   `OrderDetailID` INT NOT NULL,
   `Qunatity` INT NULL,
-  `Price` DECIMAL(18,4) NULL,
+  `Price` DECIMAL(18,2) NULL,
   `OrderID` INT NOT NULL,
   `MenuID` INT NOT NULL,
   PRIMARY KEY (`OrderDetailID`),
