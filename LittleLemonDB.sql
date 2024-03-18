@@ -103,7 +103,6 @@ CREATE TABLE IF NOT EXISTS `LittleLemonDB`.`Orders` (
   `OrderID` INT NOT NULL,
   `OrderDate` DATE NULL,
   `TotalCost` DECIMAL(18,2) NULL,
-  `Orderscol` VARCHAR(45) NULL,
   `BookingID` INT NOT NULL,
   `OrderDeliveryID` INT NOT NULL,
   PRIMARY KEY (`OrderID`),
